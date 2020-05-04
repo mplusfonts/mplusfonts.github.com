@@ -1,0 +1,372 @@
+/* BODY ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+body
+{
+color: #666;
+display: flex;
+font-family: 'Mplus1p', 'M PLUS 1p', sans-serif;
+  flex-wrap: wrap;
+margin: 0 auto;
+max-width: 1000px;
+overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+width: 68%;
+}
+
+body::-webkit-scrollbar
+{
+display:none;
+}
+
+sup
+{
+line-height: 0;
+}
+
+div#menu
+{
+width: 30%;
+}
+
+div#contents
+{
+width: 70%;
+}
+
+/* LINK ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+a:link,
+a:visited
+{
+color: #999;
+text-decoration: none;
+}
+
+a:hover
+{
+opacity: 0.4;
+}
+
+a:active
+{
+opacity: 0.0;
+}
+
+/* MENU ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div#menu ul
+{
+font-size: 0.8rem;
+font-weight: 900;
+padding: 0;
+position: fixed;
+line-height: 5rem;
+letter-spacing: 0.2rem;
+list-style: none;
+margin: 16.4rem 0 0 2%;
+text-transform: uppercase;
+}
+
+div#menu a:link,
+div#menu a:visited
+{
+color: #666;
+}
+
+/* LOGO ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div#logo
+{
+height: 12rem;
+}
+
+div#logo img
+{
+width: 24rem;
+}
+
+/* CONTENTS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div.content
+{
+margin-bottom: 4rem;
+padding-top: 0.4rem;
+}
+
+/* HEADING ------------------------------------------------------------------ */
+
+h1
+{
+font-size: 1.5rem;
+font-weight: 900;
+line-height: 2.5rem;
+margin-bottom: 1.5rem;
+}
+
+h2
+{
+font-size: 1.0rem;
+font-weight: 800;
+line-height: 1.8rem;
+margin: 2.0rem 0 1.0rem 0;
+}
+
+/* TEXTS -------------------------------------------------------------------- */
+
+div.en
+{
+font-size: 0.90rem;
+font-weight: 500;
+line-height: 1.8rem;
+}
+
+div.ja
+{
+font-size: 0.80rem;
+font-weight: 400;
+line-height: 1.8rem;
+margin-top: 1.2rem;
+}
+
+/* SAMPLE ------------------------------------------------------------------- */
+
+h1 + div.sample-en
+{
+margin-top: 2rem;
+}
+
+div.sample-en,
+div.sample-ja
+{
+display: flex;
+white-space: nowrap;
+}
+
+div.sample-en + div.sample-en
+{
+margin-top: 0.3rem;
+}
+
+div.sample-en + div.sample-ja
+{
+margin-top: 1.2rem;
+}
+
+div.sample-ja + div.sample-ja
+{
+margin-top: 0.1rem;
+}
+
+div.sample1
+{
+line-height: 1.9rem;
+margin-right: 1rem;
+text-align: center;
+width: 4.8rem;
+}
+
+p.a-en
+{
+font-size: 3.4rem;
+margin: 0.6rem 0 0 0;
+}
+
+p.a-ja
+{
+font-size: 3.4rem;
+margin: 0.7rem 0 0 0;
+}
+
+p.weight_name
+{
+font-size: 0.7rem;
+font-weight: 500;
+letter-spacing: 0.1rem;
+margin-top: 0.5rem;
+text-transform: uppercase;
+}
+
+div.sample2-en
+{
+font-size: 1.4rem;
+line-height: 1.8rem;
+}
+
+div.sample2-ja
+{
+font-size: 1.2rem;
+line-height: 1.8rem;
+}
+
+div.sample-va
+{
+white-space: nowrap;
+}
+
+/* WEIGHT SAMPLE ------------------------------------------------------------ */
+
+div.black
+{
+font-weight: 900;
+}
+
+div.extrabold
+{
+font-weight: 800;
+}
+
+div.bold
+{
+font-weight: 700;
+}
+
+div.medium
+{
+font-weight: 500;
+}
+
+div.regular
+{
+font-weight: 400;
+}
+
+div.light
+{
+font-weight: 300;
+}
+
+div.thin
+{
+font-weight: 100;
+}
+
+/* DOWNLOAD ----------------------------------------------------------------- */
+
+div.variable
+{
+animation: weight 2s infinite alternate;
+font-family: 'Mplus1pGX';
+font-size: 10rem;
+font-variation-settings: 'wght' 900;
+letter-spacing: 0.0rem;
+margin: -0.8rem 0 0 0;
+position: relative;
+}
+
+@keyframes weight
+{
+0%
+{
+color: #999;
+font-variation-settings: 'wght' 900;
+}
+100%
+{
+color: #CCC;
+font-variation-settings: 'wght' 100;
+}
+}
+
+/* LINKS -------------------------------------------------------------------- */
+
+p.link_name
+{
+font-weight: 500;
+}
+
+p.link_url
+{
+font-weight: 400;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+p.link_name + p.link_url
+{
+margin-top: -1.2rem;
+}
+
+span.uf::before
+{
+content: "@";
+}
+
+span.dm::before
+{
+content: ".";
+}
+
+/* FOOTER ------------------------------------------------------------------- */
+
+div#footer
+{
+font-size: 0.75rem;
+text-transform: uppercase;
+letter-spacing: 0.06rem;
+margin-top: 8rem;
+}
+
+/* RESPONSIVE 1112 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+@media screen and (max-width: 1112px)
+{
+/* BODY --------------------------------------------------------------------- */
+body {width: 90%;}
+div#menu {width: 25%;}
+div#contents {width: 75%;}
+div.content {margin-bottom: 2rem;}
+}
+
+/* RESPONSIVE 840 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+@media screen and (max-width: 840px)
+{
+/* DESIGN ------------------------------------------------------------------- */
+div.sample1 {visibility: hidden; margin: 0; width: 0;}
+div.sample-en + div.sample-en {margin-top: -0.5rem;}
+div.sample-en + div.sample-ja {margin-top: -0.1rem;}
+div.sample-ja + div.sample-ja {margin-top: -0.8rem;}
+}
+
+/* RESPONSIVE 700 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+@media screen and (max-width: 700px)
+{
+/* LOGO --------------------------------------------------------------------- */
+div#logo img {width: 80%; }
+/* DESIGN ------------------------------------------------------------------- */
+span.num, span.na {visibility: hidden;}
+/* FOOTER ------------------------------------------------------------------- */
+span.ufd {visibility: hidden;}
+}
+
+/* RESPONSIVE 480 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+@media screen and (max-width: 480px)
+{
+/* MENU --------------------------------------------------------------------- */
+div#menu ul {font-size: 0.6rem; line-height: 3rem; letter-spacing: 0.1rem; margin: 12.9rem 0 0 0;}
+/* LOGO --------------------------------------------------------------------- */
+div#logo {height: 8rem;}
+/* HEADING ------------------------------------------------------------------ */
+h1 {font-size: 1.2rem; line-height: 1.8rem; margin-bottom: 0.8rem;}
+h2 {font-size: 0.8rem; line-height: 1.2rem; margin: 1.5rem 0 0.8rem 0;}
+/* TEXTS -------------------------------------------------------------------- */
+div.en {font-size: 0.8rem; line-height: 1.5rem;}
+div.ja {font-size: 0.75rem; line-height: 1.5rem; margin-top: 0.8rem;}
+/* DESIGN ------------------------------------------------------------------- */
+div#design {margin-bottom: -1.4rem;}
+h1 + div.sample-en {margin-top: 1.3rem;}
+div.sample2-en {font-size: 0.8rem; line-height: 1.2rem;}
+div.sample2-ja {font-size: 0.75rem; line-height: 1.2rem;}
+div.sample-en + div.sample-en {margin-top: -2.2rem;}
+div.sample-en + div.sample-ja {margin-top: -1.2rem;}
+div.sample-ja + div.sample-ja {margin-top: -2.4rem;}
+/* DOWNLOAD ----------------------------------------------------------------- */
+div.variable {font-size: 6rem; margin: -1rem 0 -1.8rem 0;}
+/* LINKS -------------------------------------------------------------------- */
+/* FOOTER ------------------------------------------------------------------- */
+div#footer {font-size: 0.5rem; margin-top: 4rem;}
+}
