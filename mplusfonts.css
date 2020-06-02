@@ -6,6 +6,7 @@ html
 
 body
 {
+background-color: #000;
 color: #666;
 display: flex;
 font-family: 'Mplus1p', 'M PLUS 1p', sans-serif;
