@@ -8,7 +8,7 @@ body
 {
 color: #666;
 display: flex;
-font-family: 'Mplus1p', 'M PLUS 1p', sans-serif;
+font-family: 'Mplus1', 'M PLUS 1p', sans-serif;
   flex-wrap: wrap;
 margin: 0 auto;
 max-width: 1000px;
@@ -250,7 +250,7 @@ font-weight: 100;
 div.variable
 {
 animation: weight 2s infinite alternate;
-font-family: 'Mplus1pGX';
+font-family: 'Mplus1GX';
 font-size: 10rem;
 font-variation-settings: 'wght' 900;
 letter-spacing: 0.0rem;
