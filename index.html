@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="mplusfonts.css">
 <link rel="stylesheet" href="webfonts/mplus_webfonts.css">
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="changefont.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 </head>
 <body>
@@ -41,12 +43,18 @@
 <h1>Now, Redesigning with Google's Support.</h1>
 
 <div class="en">
-Currently, the <a href="https://github.com/googlefonts/gftools/blob/master/Lib/gftools/encodings/GF%20Glyph%20Sets/README.md#gf-latin-plus-567-glyphs-total--25-optional">GF Latin Plus</a> glyph set and Japanese kana glyphs for "M PLUS 1p" font are available.
-The new glyph design is displayed in these fonts you are looking at right now. If you need a font that includes kanji glyphs or other font families, please use the previous version of <a href="http://mplus-fonts.osdn.jp/about-en.html">M<sup>+</sup> FONTS (OSDN)</a>.
+Currently, the <a href="https://github.com/googlefonts/gftools/blob/master/Lib/gftools/encodings/GF%20Glyph%20Sets/README.md#gf-latin-plus-567-glyphs-total--25-optional">GF Latin Plus</a> glyph set and Japanese kana glyphs for Mplus 1 and Mplus 2 fonts are available with kanji glyphs from before. The new glyph design is displayed in these fonts you are watching now.
 </div>
 
 <div class="ja">
-Google の支援をいただいてフォントデザインの見直しをしています。現在のところ M PLUS 1p フォント用の <a href="https://github.com/googlefonts/gftools/blob/master/Lib/gftools/encodings/GF%20Glyph%20Sets/README.md#gf-latin-plus-567-glyphs-total--25-optional">GF Latin Plus</a> 欧文文字セットと、かな文字が利用可能です。新しい文字デザインは、いまご覧になっているこのフォントで表示（漢字は <a href="https://fonts.google.com">Google Fonts</a> の <a href="https://fonts.google.com/specimen/M+PLUS+1p">M PLUS 1p</a> から補完）されています。漢字の含まれたフォント、他のフォントファミリーが必要な方は従来の <a href="http://mplus-fonts.osdn.jp/about.html">M<sup>+</sup> FONTS (OSDN)</a> をご利用ください。
+Google の支援をいただいてフォントデザインの見直しをしています。現在、<a href="https://github.com/googlefonts/gftools/blob/master/Lib/gftools/encodings/GF%20Glyph%20Sets/README.md#gf-latin-plus-567-glyphs-total--25-optional">GF Latin Plus</a> 欧文文字セットとかな文字に従来の漢字を組み合わせた、Mplus 1 と Mplus 2 フォントを暫定的に公開中です。新しい文字デザインは、いまご覧になっているこのフォントでも表示されています。
+<p>
+Change font to
+<span class="change_button">
+<a href="JavaScript:void(0)">
+Mplus <span class="type">2</span>
+</a>
+</p>
 </div>
 
 </div>
@@ -71,7 +79,239 @@ The new <a href="https://github.com/coz-m/MPLUS_FONTS">M<sup>+</sup> FONTS (GitH
 
 <div class="content" id="design">
 
-<h1>Modern Sans-Serif Design in 7 weights.</h1>
+<h1>Modern Sans-Serif Design in 7 Weights.</h1>
+
+<h2>Mplus 1</h2>
+
+<div class="sample-en thin">
+<div class="sample1">
+<p class="a-en">
+Aa
+</p>
+<p class="weight_name">
+Thin
+</p>
+</div>
+<div class="sample2-en">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<br>
+abcdefghijklmnopqrstuvwxyz<span class="num"> 0123456789</span>
+</div>
+</div>
+
+<div class="sample-en light">
+<div class="sample1">
+<p class="a-en">
+Aa
+</p>
+<p class="weight_name">
+Light
+</p>
+</div>
+<div class="sample2-en">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<br>
+abcdefghijklmnopqrstuvwxyz<span class="num"> 0123456789</span>
+</div>
+</div>
+
+<div class="sample-en regular">
+<div class="sample1">
+<p class="a-en">
+Aa
+</p>
+<p class="weight_name">
+Regular
+</p>
+</div>
+<div class="sample2-en">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<br>
+abcdefghijklmnopqrstuvwxyz<span class="num"> 0123456789</span>
+</div>
+</div>
+
+<div class="sample-en medium">
+<div class="sample1">
+<p class="a-en">
+Aa
+</p>
+<p class="weight_name">
+Medium
+</p>
+</div>
+<div class="sample2-en">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<br>
+abcdefghijklmnopqrstuvwxyz<span class="num"> 0123456789</span>
+</div>
+</div>
+
+<div class="sample-en bold">
+<div class="sample1">
+<p class="a-en">
+Aa
+</p>
+<p class="weight_name">
+Bold
+</p>
+</div>
+<div class="sample2-en">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<br>
+abcdefghijklmnopqrstuvwxyz<span class="num"> 0123456789</span>
+</div>
+</div>
+
+<div class="sample-en extrabold">
+<div class="sample1">
+<p class="a-en">
+Aa
+</p>
+<p class="weight_name">
+ExtraBold
+</p>
+</div>
+<div class="sample2-en">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<br>
+abcdefghijklmnopqrstuvwxyz<span class="num"> 0123456789</span>
+</div>
+</div>
+
+<div class="sample-en black">
+<div class="sample1">
+<p class="a-en">
+Aa
+</p>
+<p class="weight_name">
+Black
+</p>
+</div>
+<div class="sample2-en">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+<br>
+abcdefghijklmnopqrstuvwxyz<span class="num"> 0123456789</span>
+</div>
+</div>
+
+<div class="sample-ja thin">
+<div class="sample1">
+<p class="a-ja">
+あ
+</p>
+<p class="weight_name">
+Thin
+</p>
+</div>
+<div class="sample2-ja">
+あいうえおかきくけこさしすせそたちつてと<span class="na">なにぬねの</span>
+<br>
+アイウエオカキクケコサシスセソタチツテト<span class="na">ナニヌネノ</span>
+</div>
+</div>
+
+<div class="sample-ja light">
+<div class="sample1">
+<p class="a-ja">
+あ
+</p>
+<p class="weight_name">
+Light
+</p>
+</div>
+<div class="sample2-ja">
+あいうえおかきくけこさしすせそたちつてと<span class="na">なにぬねの</span>
+<br>
+アイウエオカキクケコサシスセソタチツテト<span class="na">ナニヌネノ</span>
+</div>
+</div>
+
+<div class="sample-ja regular">
+<div class="sample1">
+<p class="a-ja">
+あ
+</p>
+<p class="weight_name">
+Regular
+</p>
+</div>
+<div class="sample2-ja">
+あいうえおかきくけこさしすせそたちつてと<span class="na">なにぬねの</span>
+<br>
+アイウエオカキクケコサシスセソタチツテト<span class="na">ナニヌネノ</span>
+</div>
+</div>
+
+<div class="sample-ja medium">
+<div class="sample1">
+<p class="a-ja">
+あ
+</p>
+<p class="weight_name">
+Medium
+</p>
+</div>
+<div class="sample2-ja">
+あいうえおかきくけこさしすせそたちつてと<span class="na">なにぬねの</span>
+<br>
+アイウエオカキクケコサシスセソタチツテト<span class="na">ナニヌネノ</span>
+</div>
+</div>
+
+<div class="sample-ja bold">
+<div class="sample1">
+<p class="a-ja">
+あ
+</p>
+<p class="weight_name">
+Bold
+</p>
+</div>
+<div class="sample2-ja">
+あいうえおかきくけこさしすせそたちつてと<span class="na">なにぬねの</span>
+<br>
+アイウエオカキクケコサシスセソタチツテト<span class="na">ナニヌネノ</span>
+</div>
+</div>
+
+<div class="sample-ja extrabold">
+<div class="sample1">
+<p class="a-ja">
+あ
+</p>
+<p class="weight_name">
+ExtraBold
+</p>
+</div>
+<div class="sample2-ja">
+あいうえおかきくけこさしすせそたちつてと<span class="na">なにぬねの</span>
+<br>
+アイウエオカキクケコサシスセソタチツテト<span class="na">ナニヌネノ</span>
+</div>
+</div>
+
+<div class="sample-ja black">
+<div class="sample1">
+<p class="a-ja">
+あ
+</p>
+<p class="weight_name">
+Black
+</p>
+</div>
+<div class="sample2-ja">
+あいうえおかきくけこさしすせそたちつてと<span class="na">なにぬねの</span>
+<br>
+アイウエオカキクケコサシスセソタチツテト<span class="na">ナニヌネノ</span>
+</div>
+</div>
+
+<!-------------------------------------------------------------------------- -->
+
+<h2>Mplus 2</h2>
+
+<div class="mplus2">
 
 <div class="sample-en thin">
 <div class="sample1">
@@ -299,6 +539,8 @@ Black
 
 </div>
 
+</div>
+
 <!-- DOWNLOAD -------------------------------------------------------------- -->
 
 <div class="content" id="download">
@@ -309,34 +551,61 @@ Black
 
 <div class="urls">
 <p class="link_name">
-OpenType fonts (otf)
+Mplus 1 - OpenType fonts (otf)
 </p>
 <p class="link_url">
-<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/otf">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/otf</a>
+<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/otf-1k">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/otf-1k</a>
 </p>
 </div>
 
 <div class="urls">
 <p class="link_name">
-TrueType fonts (ttf)
+Mplus 1 - TrueType fonts (ttf)
 </p>
 <p class="link_url">
-<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/ttf">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/ttf</a>
+<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/ttf-1k">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/ttf-1k</a>
 </p>
 </div>
 
 <div class="urls">
 <p class="link_name">
-Webfonts (eot, woff, woff2)
+Mplus 1 - Webfonts (eot, woff, woff2)*
 </p>
 <p class="link_url">
-<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/webfonts">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/webfonts</a>
+<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/webfonts-1">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/webfonts-1</a>
 </p>
 </div>
 
 <div class="urls">
 <p class="link_name">
-Variable fonts (ttf)
+Mplus 2 - OpenType fonts (otf)
+</p>
+<p class="link_url">
+<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/otf-2k">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/otf-2k</a>
+</p>
+</div>
+
+<div class="urls">
+<p class="link_name">
+Mplus 2 - TrueType fonts (ttf)
+</p>
+<p class="link_url">
+<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/ttf-2k">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/ttf-2k</a>
+</p>
+</div>
+
+<div class="urls">
+<p class="link_name">
+Mplus 2 - Webfonts (eot, woff, woff2)*
+</p>
+<p class="link_url">
+<a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/webfonts-2">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/webfonts-2</a>
+</p>
+</div>
+
+<div class="urls">
+<p class="link_name">
+Mplus 1/2 - Variable fonts (ttf)*
 </p>
 <p class="link_url">
 <a href="https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/variable_fonts">https://github.com/coz-m/MPLUS_FONTS/tree/master/fonts/variable_fonts</a>
@@ -347,6 +616,10 @@ Variable fonts (ttf)
 
 <div class="variable">
 Aaあ
+</div>
+
+<div class="en">
+*Kanji glyphs are not included.
 </div>
 
 </div>
@@ -455,7 +728,7 @@ coji<span class="uf">underforest</span><span class="dm">com</span>
 <!-- FOOTER ---------------------------------------------------------------- -->
 
 <div id="footer">
-copyright &nbsp; 2019-2020 &nbsp; coji morishita<span class="ufd"> / underforest design</span>
+copyright &nbsp; 2019-2021 &nbsp; coji morishita<span class="ufd"> / underforest design</span>
 </div>
 
 <!-------------------------------------------------------------------------- -->

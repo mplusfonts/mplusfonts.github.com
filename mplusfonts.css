@@ -133,6 +133,15 @@ line-height: 1.8rem;
 margin-top: 1.2rem;
 }
 
+span.change_button a
+{
+border: 1px solid #CCC;
+border-radius: 0.25rem;
+font-size: 0.8rem;
+margin-left: 0.5rem;
+padding: 0.2rem 1.0rem 0.3rem 1.1rem;
+}
+
 /* SAMPLE ------------------------------------------------------------------- */
 
 h1 + div.sample-en
@@ -245,6 +254,17 @@ div.thin
 font-weight: 100;
 }
 
+div.mplus2
+{
+font-family: 'Mplus2';
+}
+
+h2 + div.sample-en,
+h2 + div.mplus2
+{
+margin-top: 2.0rem;
+}
+
 /* DOWNLOAD ----------------------------------------------------------------- */
 
 div.variable
@@ -254,7 +274,7 @@ font-family: 'Mplus1GX';
 font-size: 10rem;
 font-variation-settings: 'wght' 900;
 letter-spacing: 0.0rem;
-margin: -0.8rem 0 0 0;
+margin: -0.8rem 0 0.8rem 0;
 position: relative;
 }
 
@@ -369,7 +389,7 @@ div.sample-en + div.sample-en {margin-top: -2.2rem;}
 div.sample-en + div.sample-ja {margin-top: -1.2rem;}
 div.sample-ja + div.sample-ja {margin-top: -2.4rem;}
 /* DOWNLOAD ----------------------------------------------------------------- */
-div.variable {font-size: 6rem; margin: -1rem 0 -1.8rem 0;}
+div.variable {font-size: 6rem; margin: -1rem 0 -0.4rem 0;}
 /* LINKS -------------------------------------------------------------------- */
 /* FOOTER ------------------------------------------------------------------- */
 div#footer {font-size: 0.5rem; margin-top: 4rem;}
