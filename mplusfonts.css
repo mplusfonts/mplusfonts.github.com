@@ -259,6 +259,16 @@ div.mplus2
 font-family: 'Mplus2';
 }
 
+div.mpluscode50
+{
+font-family: 'Mpluscode-50';
+}
+
+div.mpluscode60
+{
+font-family: 'Mpluscode-60';
+}
+
 h2 + div.sample-en,
 h2 + div.mplus2
 {
@@ -274,7 +284,7 @@ font-family: 'Mplus1GX';
 font-size: 10rem;
 font-variation-settings: 'wght' 900;
 letter-spacing: 0.0rem;
-margin: -0.8rem 0 0.8rem 0;
+margin: 1rem 0 0.8rem 0;
 position: relative;
 }
 
@@ -292,6 +302,61 @@ font-variation-settings: 'wght' 100;
 }
 }
 
+div.variable2
+{
+animation: wghtwdth 6s infinite alternate;
+font-family: 'MpluscodeGX';
+font-size: 10rem;
+font-variation-settings: 'wght' 700 'wdth' 50;
+letter-spacing: 0.0rem;
+margin: -3rem 0 0.8rem 0;
+position: relative;
+}
+
+@keyframes wghtwdth
+{
+0%
+{
+color: #999;
+font-variation-settings: 'wght' 700, 'wdth' 50;
+}
+14%
+{
+color: #CCC;
+font-variation-settings: 'wght' 100, 'wdth' 50;
+}
+29%
+{
+color: #999;
+font-variation-settings: 'wght' 100, 'wdth' 60;
+}
+43%
+{
+color: #CCC;
+font-variation-settings: 'wght' 700, 'wdth' 60;
+}
+57%
+{
+color: #999;
+font-variation-settings: 'wght' 700, 'wdth' 50;
+}
+71%
+{
+color: #CCC;
+font-variation-settings: 'wght' 100, 'wdth' 50;
+}
+86%
+{
+color: #999;
+font-variation-settings: 'wght' 700, 'wdth' 60;
+}
+100%
+{
+color: #CCC;
+font-variation-settings: 'wght' 100, 'wdth' 60;
+}
+}
+
 /* LINKS -------------------------------------------------------------------- */
 
 p.link_name
@@ -305,6 +370,11 @@ font-weight: 400;
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
+}
+
+p.note
+{
+margin-top: 1.6rem;
 }
 
 p.link_name + p.link_url
