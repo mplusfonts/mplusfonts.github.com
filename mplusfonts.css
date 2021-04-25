@@ -451,8 +451,8 @@ div#logo {height: 8rem;}
 h1 {font-size: 1.2rem; line-height: 1.8rem; margin-bottom: 0.8rem;}
 h2 {font-size: 0.8rem; line-height: 1.2rem; margin: 1.5rem 0 0.8rem 0;}
 /* TEXTS -------------------------------------------------------------------- */
-div.en {font-size: 0.8rem; line-height: 1.5rem;}
-div.ja {font-size: 0.75rem; line-height: 1.5rem; margin-top: 0.8rem;}
+div.en {font-size: 0.72rem; line-height: 1.5rem;}
+div.ja {font-size: 0.70rem; line-height: 1.5rem; margin-top: 0.8rem;}
 /* DESIGN ------------------------------------------------------------------- */
 div#design {margin-bottom: -1.4rem;}
 h1 + div.sample-en {margin-top: 1.3rem;}
@@ -462,7 +462,7 @@ div.sample-en + div.sample-en {margin-top: -2.2rem;}
 div.sample-en + div.sample-ja {margin-top: -1.2rem;}
 div.sample-ja + div.sample-ja {margin-top: -2.4rem;}
 /* DOWNLOAD ----------------------------------------------------------------- */
-div.variable {font-size: 6rem; margin: -1rem 0 -0.4rem 0;}
+div.variable, div.variable2 {font-size: 6rem; margin: 1rem 0 -0.4rem 0;}
 /* LINKS -------------------------------------------------------------------- */
 /* FOOTER ------------------------------------------------------------------- */
 div#footer {font-size: 0.5rem; margin-top: 4rem;}
