@@ -370,6 +370,11 @@ font-weight: 500;
 p.link_url
 {
 font-weight: 400;
+}
+
+p.link_name,
+p.link_url
+{
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
