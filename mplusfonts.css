@@ -113,7 +113,7 @@ h2
 font-size: 1.0rem;
 font-weight: 800;
 line-height: 1.8rem;
-margin: 2.0rem 0 1.0rem 0;
+margin: 3.0rem 0 1.0rem 0;
 }
 
 /* TEXTS -------------------------------------------------------------------- */
@@ -270,7 +270,10 @@ font-family: 'Mpluscode-60';
 }
 
 h2 + div.sample-en,
-h2 + div.mplus2
+h2 + div.mplus1,
+h2 + div.mplus2,
+h2 + div.mpluscode50,
+h2 + div.mpluscode60
 {
 margin-top: 2.0rem;
 }
