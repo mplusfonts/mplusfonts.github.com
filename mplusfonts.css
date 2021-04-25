@@ -105,7 +105,7 @@ h1
 font-size: 1.5rem;
 font-weight: 900;
 line-height: 2.5rem;
-margin-bottom: 1.5rem;
+margin-bottom: 2.0rem;
 }
 
 h2
@@ -113,7 +113,7 @@ h2
 font-size: 1.0rem;
 font-weight: 800;
 line-height: 1.8rem;
-margin: 3.0rem 0 1.0rem 0;
+margin: 2.0rem 0 1.0rem 0;
 }
 
 /* TEXTS -------------------------------------------------------------------- */
@@ -453,21 +453,26 @@ div#menu ul {font-size: 0.6rem; line-height: 3rem; letter-spacing: 0.1rem; margi
 /* LOGO --------------------------------------------------------------------- */
 div#logo {height: 8rem;}
 /* HEADING ------------------------------------------------------------------ */
-h1 {font-size: 1.2rem; line-height: 1.8rem; margin-bottom: 0.8rem;}
-h2 {font-size: 0.8rem; line-height: 1.2rem; margin: 1.5rem 0 0.8rem 0;}
+h1 {font-size: 1.2rem; line-height: 1.8rem; margin-bottom: 1.0rem;}
+h2 {font-size: 0.8rem; line-height: 1.2rem; margin-top: 1.2rem;}
 /* TEXTS -------------------------------------------------------------------- */
 div.en {font-size: 0.72rem; line-height: 1.5rem;}
 div.ja {font-size: 0.70rem; line-height: 1.5rem; margin-top: 0.8rem;}
 /* DESIGN ------------------------------------------------------------------- */
 div#design {margin-bottom: -1.4rem;}
-h1 + div.sample-en {margin-top: 1.3rem;}
+h2 + div.mplus1, h2 + div.mplus2, h2 + div.mpluscode50, h2 + div.mpluscode60
+ {margin-top: 0.8rem;}
 div.sample2-en {font-size: 0.8rem; line-height: 1.2rem;}
 div.sample2-ja {font-size: 0.75rem; line-height: 1.2rem;}
 div.sample-en + div.sample-en {margin-top: -2.2rem;}
-div.sample-en + div.sample-ja {margin-top: -1.2rem;}
+div.sample-en + div.sample-ja {margin-top: -1.8rem;}
 div.sample-ja + div.sample-ja {margin-top: -2.4rem;}
+div.mplus1 + h2, div.mplus2 + h2, div.mpluscode50 + h2
+ {margin-top: -2.0rem;}
 /* DOWNLOAD ----------------------------------------------------------------- */
-div.variable, div.variable2 {font-size: 6rem; margin: 1rem 0 -0.4rem 0;}
+div.variable {font-size: 6rem; margin-top: 1.2rem;}
+div.variable2 {font-size: 6rem; margin: -2.0rem 0 -1.4rem 0;}
+p.note {margin-top: 1.0rem;}
 /* LINKS -------------------------------------------------------------------- */
 /* FOOTER ------------------------------------------------------------------- */
 div#footer {font-size: 0.5rem; margin-top: 4rem;}
