@@ -1,4 +1,5 @@
 /* BODY ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
 html
 {
 -webkit-text-size-adjust: 100%;
@@ -6,39 +7,25 @@ html
 
 body
 {
+background-color: #FFF;
 color: #666;
-display: flex;
-font-family: 'Mplus1', 'M PLUS 1p', sans-serif;
-  flex-wrap: wrap;
+font-family: 'M PLUS 1', sans-serif;
+font-size: max(1.4vw, 2.2vh);
+line-height: 180%;
 margin: 0 auto;
-max-width: 1000px;
+width: min(86%, 80vh);
+
 overflow-y: scroll;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-width: 68%;
+-ms-overflow-style: none;
+scrollbar-width: none;
 }
 
 body::-webkit-scrollbar
 {
-display:none;
+display: none;
 }
 
-sup
-{
-line-height: 0;
-}
-
-div#menu
-{
-width: 30%;
-}
-
-div#contents
-{
-width: 70%;
-}
-
-/* LINK ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* LINK --------------------------------------------------------------------- */
 
 a:link,
 a:visited
@@ -57,241 +44,274 @@ a:active
 opacity: 0.0;
 }
 
-/* MENU ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* COVER :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-div#menu ul
+#cover
 {
-font-size: 0.8rem;
-font-weight: 900;
-padding: 0;
-position: fixed;
-line-height: 5rem;
-letter-spacing: 0.2rem;
-list-style: none;
-margin: 16.4rem 0 0 2%;
-text-transform: uppercase;
+height: 100vh;
+position: relative;
 }
 
-div#menu a:link,
-div#menu a:visited
+#logo
 {
-color: #666;
+width: 100%;
 }
 
-/* LOGO ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-div#logo
+#renew
 {
-height: 12rem;
-}
-
-div#logo img
-{
-width: 24rem;
+bottom: 2vh;
+left: 50%;
+position: absolute;
+transform: translateX(-50%);
+width: max(32%, 24vh);
 }
 
 /* CONTENTS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-div.content
+div.contents
 {
-margin-bottom: 4rem;
-padding-top: 0.4rem;
+padding-top: 1vh;
 }
 
-/* HEADING ------------------------------------------------------------------ */
-
-h1
+h1,
+div.show_menu
 {
-font-size: 1.5rem;
-font-weight: 900;
-line-height: 2.5rem;
-margin-bottom: 2.0rem;
+font-size: min(8vw, 7.8vh);
+font-variation-settings: 'wght' 900;
+margin: min(5.5vw, 5.5vh) 0;
 }
 
 h2
 {
-font-size: 1.0rem;
-font-weight: 800;
-line-height: 1.8rem;
-margin: 2.0rem 0 1.0rem 0;
+font-size: min(5vw, 5vh);
+font-variation-settings: 'wght' 900;
+margin: min(12vw, 14vh) 0 min(4.5vw, 3.5vh) 0;
 }
 
-/* TEXTS -------------------------------------------------------------------- */
-
-div.en
+p.EN
 {
-font-size: 0.90rem;
-font-weight: 500;
-line-height: 1.8rem;
+font-variation-settings: 'wght' 480;
 }
 
-div.ja
+p.JA
 {
-font-size: 0.80rem;
-font-weight: 400;
-line-height: 1.8rem;
-margin-top: 1.2rem;
+font-size: 92%;
+font-variation-settings: 'wght' 420;
 }
 
-span.change_button a
+sup
 {
-border: 1px solid #CCC;
-border-radius: 0.25rem;
-font-size: 0.8rem;
-margin-left: 0.5rem;
-padding: 0.2rem 1.0rem 0.3rem 1.1rem;
+line-height: 0;
 }
 
-/* SAMPLE ------------------------------------------------------------------- */
+/* ABOUT :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-h1 + div.sample-en
+#about
 {
-margin-top: 2rem;
+margin-top: max(14vw, 16vh);
 }
 
-div.sample-en,
-div.sample-ja
+p.select_font
+{
+font-variation-settings: 'wght' 700;
+margin-top: min(1.6vw, 2.5vh);
+}
+
+span.change_font1,
+span.change_font2,
+span.cl50,
+span.cl60
+{
+border-bottom: max(0.7vw, 1.1vh) solid #CCC;
+margin-left: 0.4rem;
+}
+
+/* M PLUS FONTS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div.sample
 {
 display: flex;
-white-space: nowrap;
+flex-direction: row;
+font-size: min(12.5vw, 11.5vh);
+font-variation-settings: 'wght' 700;
+line-height: 0%;
+margin-top: min(-2.5vw, -2vh);
 }
 
-div.sample-en + div.sample-en
+span.square
 {
-margin-top: 0.3rem;
+color: #CCC;
+font-family: 'symbols';
+font-variation-settings: 'wght' 100;
 }
 
-div.sample-en + div.sample-ja
+.mplus1
 {
-margin-top: 1.2rem;
+font-family: 'M PLUS 1';
 }
 
-div.sample-ja + div.sample-ja
+.mplus2
 {
-margin-top: 0.1rem;
+font-family: 'M PLUS 2';
 }
 
-div.sample1
+.mplus1code
 {
-line-height: 1.9rem;
-margin-right: 1rem;
+font-family: 'M PLUS 1 Code';
+}
+
+.mpluscodelatin
+{
+font-family: 'M PLUS Code Latin';
+}
+
+span.mpluscodelatin50
+{
+font-family: 'M PLUS Code Latin';
+font-variation-settings: 'wght' 700, 'wdth' 100;
+}
+
+span.mpluscodelatin60
+{
+font-family: 'M PLUS Code Latin';
+font-variation-settings: 'wght' 700, 'wdth' 125;
+}
+
+p.sample2
+{
+margin-left: min(4vw, 4vh);
+}
+
+div.select_weight
+{
+font-family: 'symbols';
+font-size: min(4vw, 4vh);
+margin-top: min(-1.6vw, -2.2vh);
+}
+
+div.select_weight a:link,
+div.select_weight a:visited
+{
+color: #888;
+}
+
+span.selected_weight
+{
+color: #666;
+font-family: 'M PLUS 1', sans-serif;
+font-size: min(3vw, 2.2vh);
+font-variation-settings: 'wght' 500;
+margin-left: min(2vw, 2vh);
+vertical-align: 12%;
+}
+
+div.similar_sample
+{
+display: flex;
+flex-direction: row;
+font-family: 'M PLUS 1 Code';
+justify-content: space-between;
+margin-top: min(4vw, 5vh);
 text-align: center;
-width: 4.8rem;
 }
 
-p.a-en
+span.sglyph
 {
-font-size: 3.4rem;
-margin: 0.6rem 0 0 0;
+font-size: min(7vw, 7vh);
+font-variation-settings: 'wght' 600;
 }
 
-p.a-ja
+span.sname
 {
-font-size: 3.4rem;
-margin: 0.7rem 0 0 0;
+font-size: max(1.0vw, 1.0vh);
+font-variation-settings: 'wght' 400;
 }
 
-p.weight_name
+div.chicks,
+div.paoyes,
+div.warnniewow
 {
-font-size: 0.7rem;
-font-weight: 500;
-letter-spacing: 0.1rem;
-margin-top: 0.5rem;
-text-transform: uppercase;
+display: flex;
+justify-content: flex-end;
 }
 
-div.sample2-en
+div.chicks
 {
-font-size: 1.4rem;
-line-height: 1.8rem;
+margin: max(2vw, 3vh) 0 min(-4vw, -4vh) 0;
 }
 
-div.sample2-ja
+div.chicks img
 {
-font-size: 1.2rem;
-line-height: 1.8rem;
+width: max(24vw, 30vh);
 }
 
-div.sample-va
+div.paoyes
 {
-white-space: nowrap;
+margin: min(2vw, 2vh) 0 min(-5vw, -2vh) 0;
 }
 
-/* WEIGHT SAMPLE ------------------------------------------------------------ */
-
-div.black
+div.paoyes img
 {
-font-weight: 900;
+width: max(32vw, 40vh);
 }
 
-div.extrabold
+pre.terminal
 {
-font-weight: 800;
+background-color: #666;
+border-radius: max(0.4vw, 0.7vh);
+color: #FFF;
+font-family: 'M PLUS Code Latin', 'M PLUS 1 Code';
+font-size: min(2.3vw, 2.1vh);
+font-variation-settings: 'wght' 400, 'wdth' 100;
+line-height: 200%;
+margin: min(12vw, 14vh) 0 min(4.5vw, 3.5vh) 0;
+padding: min(3vw, 3vh) 0 min(2vw, 2vh) min(4vw, 4vh);
 }
 
-div.bold
+p.exj
 {
-font-weight: 700;
+font-size: max(1.1vw, 1.4vh);
+margin-top: max(-5vw, -2vh);
 }
 
-div.medium
-{
-font-weight: 500;
-}
-
-div.regular
-{
-font-weight: 400;
-}
-
-div.light
-{
-font-weight: 300;
-}
-
-div.thin
-{
-font-weight: 100;
-}
-
-div.mplus2
-{
-font-family: 'Mplus2';
-}
-
-div.mpluscode50
-{
-font-family: 'Mpluscode-50';
-}
-
-div.mpluscode60
-{
-font-family: 'Mpluscode-60';
-}
-
-h2 + div.sample-en,
-h2 + div.mplus1,
-h2 + div.mplus2,
-h2 + div.mpluscode50,
-h2 + div.mpluscode60
-{
-margin-top: 2.0rem;
-}
-
-/* DOWNLOAD ----------------------------------------------------------------- */
+/* VARIABLE FONTS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 div.variable
 {
-animation: weight 2s infinite alternate;
-font-family: 'Mplus1GX';
-font-size: 10rem;
-font-variation-settings: 'wght' 900;
-letter-spacing: 0.0rem;
-margin: 1rem 0 0.8rem 0;
-position: relative;
+font-size: min(16vw, 16vh);
+margin: max(5vw, 5vh) 0 max(6.5vw, 5.5vh) 0;
 }
 
-@keyframes weight
+div.from100
+{
+animation: weight100 2s infinite alternate;
+}
+
+div.from900
+{
+animation: weight900 2s infinite alternate;
+}
+
+div.from700100
+{
+animation: wghtwdth 6s infinite alternate;
+}
+
+@keyframes weight100
+{
+0%
+{
+color: #CCC;
+font-variation-settings: 'wght' 100;
+}
+100%
+{
+color: #999;
+font-variation-settings: 'wght' 900;
+}
+}
+
+@keyframes weight900
 {
 0%
 {
@@ -305,175 +325,165 @@ font-variation-settings: 'wght' 100;
 }
 }
 
-div.variable2
-{
-animation: wghtwdth 6s infinite alternate;
-font-family: 'MpluscodeGX';
-font-size: 10rem;
-font-variation-settings: 'wght' 700 'wdth' 50;
-letter-spacing: 0.0rem;
-margin: -3rem 0 0.8rem 0;
-position: relative;
-}
-
 @keyframes wghtwdth
 {
 0%
 {
 color: #999;
-font-variation-settings: 'wght' 700, 'wdth' 50;
+font-variation-settings: 'wght' 700, 'wdth' 100;
 }
 14%
 {
 color: #CCC;
-font-variation-settings: 'wght' 100, 'wdth' 50;
+font-variation-settings: 'wght' 100, 'wdth' 100;
 }
 29%
 {
 color: #999;
-font-variation-settings: 'wght' 100, 'wdth' 60;
+font-variation-settings: 'wght' 100, 'wdth' 125;
 }
 43%
 {
 color: #CCC;
-font-variation-settings: 'wght' 700, 'wdth' 60;
+font-variation-settings: 'wght' 700, 'wdth' 125;
 }
 57%
 {
 color: #999;
-font-variation-settings: 'wght' 700, 'wdth' 50;
+font-variation-settings: 'wght' 700, 'wdth' 100;
 }
 71%
 {
 color: #CCC;
-font-variation-settings: 'wght' 100, 'wdth' 50;
+font-variation-settings: 'wght' 100, 'wdth' 100;
 }
 86%
 {
 color: #999;
-font-variation-settings: 'wght' 700, 'wdth' 60;
+font-variation-settings: 'wght' 700, 'wdth' 125;
 }
 100%
 {
 color: #CCC;
-font-variation-settings: 'wght' 100, 'wdth' 60;
+font-variation-settings: 'wght' 100, 'wdth' 125;
 }
 }
 
-/* LINKS -------------------------------------------------------------------- */
-
-p.link_name
+div.warnniewow
 {
-font-weight: 500;
+margin: max(6vw, 7vh) 0 min(-4vw, -4vh) 0;
 }
 
-p.link_url
+div.warnniewow img
 {
-font-weight: 400;
+width: max(24vw, 30vh);
 }
 
-p.link_name,
-p.link_url
+/* USE FONT ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+p.twoways
 {
-overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap;
+font-size: min(5vw, 5vh);
+font-variation-settings: 'wght' 800;
+line-height: 240%;
+margin-top: min(4vw, 4vh);
 }
 
-p.note
+p.twoways,
+p.urls
 {
-margin-top: 1.6rem;
+margin-left: min(22vw, 22vh);
 }
 
-p.link_name + p.link_url
+/* LINKS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h1 + p.urls
 {
-margin-top: -1.2rem;
+margin-top: max(6vw, 6vh);
 }
 
-span.uf::before
+p.urls
 {
-content: "@";
+font-variation-settings: 'wght' 400;
+line-height: 140%;
 }
 
-span.dm::before
+p.urls::first-line
 {
-content: ".";
+font-variation-settings: 'wght' 600;
 }
 
-/* FOOTER ------------------------------------------------------------------- */
-
-div#footer
+p.urls a
 {
-font-size: 0.75rem;
-text-transform: uppercase;
-letter-spacing: 0.06rem;
-margin-top: 8rem;
+font-size: max(1.2vw, 2.0vh);
 }
 
-/* RESPONSIVE 1112 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-@media screen and (max-width: 1112px)
+div.chicksit
 {
-/* BODY --------------------------------------------------------------------- */
-body {width: 90%;}
-div#menu {width: 25%;}
-div#contents {width: 75%;}
-div.content {margin-bottom: 2rem;}
+margin-top: max(14vw, 14vh);
+text-align: center;
 }
 
-/* RESPONSIVE 840 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-@media screen and (max-width: 840px)
+div.chicksit img
 {
-/* DESIGN ------------------------------------------------------------------- */
-div.sample1 {visibility: hidden; margin: 0; width: 0;}
-div.sample-en + div.sample-en {margin-top: -0.5rem;}
-div.sample-en + div.sample-ja {margin-top: -0.1rem;}
-div.sample-ja + div.sample-ja {margin-top: -0.8rem;}
+width: max(8vw, 10vh);
 }
 
-/* RESPONSIVE 700 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* FOOTER ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-@media screen and (max-width: 700px)
+#footer
 {
-/* LOGO --------------------------------------------------------------------- */
-div#logo img {width: 80%; }
-/* DESIGN ------------------------------------------------------------------- */
-span.num, span.na {visibility: hidden;}
-/* FOOTER ------------------------------------------------------------------- */
-span.ufd {visibility: hidden;}
+font-size: max(0.8vw, 1.2vh);
+font-variation-settings: 'wght' 700;
+letter-spacing: 0.4vw;
+margin: min(24vw, 24vh) 0 min(6vw, 6vh) 0;
+text-align: center;
+width: 100%;
 }
 
-/* RESPONSIVE 480 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-@media screen and (max-width: 480px)
+#footer_logo
 {
-/* MENU --------------------------------------------------------------------- */
-div#menu ul {font-size: 0.6rem; line-height: 3rem; letter-spacing: 0.1rem; margin: 12.9rem 0 0 0;}
-/* LOGO --------------------------------------------------------------------- */
-div#logo {height: 8rem;}
-/* HEADING ------------------------------------------------------------------ */
-h1 {font-size: 1.2rem; line-height: 1.8rem; margin-bottom: 1.0rem;}
-h2 {font-size: 0.8rem; line-height: 1.2rem; margin-top: 1.2rem;}
-/* TEXTS -------------------------------------------------------------------- */
-div.en {font-size: 0.72rem; line-height: 1.5rem;}
-div.ja {font-size: 0.70rem; line-height: 1.5rem; margin-top: 0.8rem;}
-/* DESIGN ------------------------------------------------------------------- */
-div#design {margin-bottom: -1.4rem;}
-h2 + div.mplus1, h2 + div.mplus2, h2 + div.mpluscode50, h2 + div.mpluscode60
- {margin-top: 0.8rem;}
-div.sample2-en {font-size: 0.8rem; line-height: 1.2rem;}
-div.sample2-ja {font-size: 0.75rem; line-height: 1.2rem;}
-div.sample-en + div.sample-en {margin-top: -2.2rem;}
-div.sample-en + div.sample-ja {margin-top: -1.8rem;}
-div.sample-ja + div.sample-ja {margin-top: -2.4rem;}
-div.mplus1 + h2, div.mplus2 + h2, div.mpluscode50 + h2
- {margin-top: -2.0rem;}
-/* DOWNLOAD ----------------------------------------------------------------- */
-div.variable {font-size: 6rem; margin-top: 1.2rem;}
-div.variable2 {font-size: 6rem; margin: -2.0rem 0 -1.4rem 0;}
-p.note {margin-top: 1.0rem;}
-/* LINKS -------------------------------------------------------------------- */
-/* FOOTER ------------------------------------------------------------------- */
-div#footer {font-size: 0.5rem; margin-top: 4rem;}
+margin-bottom: -2.2vh;
+width: 32%;
+}
+
+/* MENU ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div.show_menu
+{
+line-height: 36%;
+margin: max(16vw, 18vh) 0 max(14vw, 16vh) 0;
+text-align: center;
+width: 100%;
+}
+
+#menu a:link,
+#menu a:visited
+{
+color: #FFF;
+}
+
+#menu
+{
+bottom: 20%;
+font-variation-settings: 'wght' 700;
+left: 50%;
+letter-spacing: 0.2vw;
+position: fixed;
+transform: translateX(-50%);
+}
+
+#menu ul
+{
+background-color: #666;
+border-radius: max(0.8vw, 1.4vh);
+line-height: 240%;
+list-style-type: none;
+padding: 2.2vh 0 0.4vh 0;
+width: max(22vw, 28vh);
+}
+
+#menu ul li
+{
+margin-left: max(5vw, 5vh);
 }
