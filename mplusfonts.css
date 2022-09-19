@@ -49,7 +49,7 @@ opacity: 0.0;
 #cover
 {
 height: 100vh;
-height: 100dvh;
+height: 100svh;
 position: relative;
 }
 
